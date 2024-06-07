@@ -126,7 +126,6 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-
   void _insertItem() async {
     Map<String, dynamic> row = {
       'name': name.text,
@@ -135,7 +134,6 @@ class _MyHomePageState extends State<MyHomePage> {
     await dbHelper.insertItem(row);
     setState(() {});
   }
-
 
   void _updateItem(Map<String, dynamic> item) async {
     Map<String, dynamic> row = {
